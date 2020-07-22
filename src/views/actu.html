@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Gestion des actualitées</title>
+        <link rel="stylesheet" href="/stylesheets/actu.css"/>
+        <link rel="stylesheet" href="/stylesheets/jquery.toast.min.css"/>
+    </head>
+    <body id="body" data-tab="2">
+        <h1>Gestion des actualitées</h1>
+        <div id="wrapper_content">
+
+            <div id="arrowl" class="arrow"></div>
+
+            <div class="content1">
+                 <!--Manage Actualitées-->
+                <div id="left_part" class="actu-column add-actu-col">
+                    <div class="column-header">Créer une actualité</div>
+                    <div>
+                        <input id="type-actu-input" required  type="text" minlength="4" maxlength="25" title="ex: exposition, historique, conférence etc ..." placeholder="type" size="40">
+                    </div>
+                    <div>
+                        <input id="nom-actu-input" required  type="text"  minlength="4" maxlength="20" title="le nom se rapporte à l'image" placeholder="nom" size="40">
+                    </div>
+                    <div>
+                        <input id="head-actu-input" required  type="text"  minlength="4" maxlength="40" title="ce champ est personalisable selon le type d'annonce" placeholder="en-tête" size="40">
+                    </div>
+                    <div>
+                        <textarea id="content-actu-input" required  type="text"  minlength="4" maxlength="170" title="décrivez succinctement l'actualité" placeholder="description" rows="9"></textarea>
+                    </div>
+                    <div>
+                        <input id="cp-actu-input" required  type="text"  minlength="4" maxlength="10" title="ce champ peut servir à d'autres informations selon le type d'actualité" placeholder="département ou autres" size="40">
+                    </div>
+                    <div>
+                        <input id="ville-actu-input" required  type="text"  minlength="4" maxlength="30" title="ville, nom de rue etc .." placeholder="ville" size="40">
+                    </div>
+                    <div>
+                        <input id="mm-actu-input" required  type="text"  minlength="4" maxlength="25" title="ce champ est personalisable selon le type d'annonce" placeholder="indications financières ou autres ..." size="40">
+                    </div>
+                    <div>
+                        <input id="duree-actu-input" required type="text"  minlength="4" maxlength="15" title="ce champ est personalisable selon le type d'annonce" placeholder="durée des travaux, de la conférence ..." size="40">
+                    </div>
+                    <div class="inputbtn">
+                        <input id="url-img-actu-input" placeholder="nom de l'image" size="34">
+                        <button id="upload-img-btn" >...</button>
+                        <input hidden type="file" id="file_upload" name="file" accept="image/png, image/jpeg, image/jpg, image/gif">
+                    </div>
+                    <div id="imagePreview">
+                    </div>
+                    <div>
+                        <button id="add-actu-btn">Publier</button>
+                    </div>
+                </div>
+                <!-- Lister les actualitées -->
+                <div id="middle_part" class="actu-column add-actu-col middle_part">
+                    <div class="column-header">Toutes les actualités publiées</div>
+                    <div class="btns_actu_pub">
+                        <button id="list-actu-btn">Lister</button>
+                    </div>
+                    <div id="all-actu-anchor"></div>
+                </div>
+                <!-- Actualités spécifiques -->
+                <div id="right_part" class="actu-column add-actu-col">
+                    <div id="wrapper_interact">
+                    <div id="container_idinteract">
+                        <span class="label_interact">ID</span>
+                        <input id="id-actu-input" name="idinteract" placeholder="renseigner un id d'actualité" size="26">
+                    </div>
+                    <div id="btns_job_part">
+                        <button id="showe-actu-btn" class="small-btn">Consulter</button>
+                        <button id="del-actu-btn" class="small-btn">Supprimer</button>
+                        <button id="view-actu-btn">Tout consulter</button>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="arrowr" class="arrow"></div>
+
+        </div>
+        <script src="/scripts/jquery-3.5.1.min.js"></script>
+        <script src="/scripts/scroll_arrow.js"></script>
+        <script src="/scripts/jquery.toast.min.js"></script>
+        <script src="/scripts/toast.js"></script>
+        <script src="/scripts/api_job.js"></script>
+        <script src="/scripts/actu.js"></script>
+    </body>
+</html>

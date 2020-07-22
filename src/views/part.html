@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Gestion des partenraires</title>
+        <link rel="stylesheet" type="text/css" href="/stylesheets/part.css" />
+        <link rel="stylesheet" href="/stylesheets/jquery.toast.min.css"/>
+    </head>
+    <body id="body" data-tab="3">
+    <h1>Gestion des partenaires</h1>
+    <div id="wrapper_content">
+
+        <div id="arrowl" class="arrow"></div>
+
+        <div class="content1">
+        <!-- Manage Partenaires -->
+
+        <div id="content11" class="part-column add-part-col">
+            <div class="column-header">Ajouter un partenaire</div>
+            <div>
+                <select name="type-part" id="type-part-select" class="select-css" required>
+                    <option value="col" selected>Collectivité publique</option>
+                    <option value="part">Particulier</option>
+                </select>
+            </div>
+            <div>
+                <input id="nom-part-input" name="name_part" placeholder="nom ou nomination ... " minlength="2" maxlength="35" size="40">
+            </div>
+            <div>
+                <button id="add-part-btn">Ajouter</button>
+            </div>
+        </div>
+        <!-- Lister les partenaires -->
+        <div id="content12" class="part-column add-part-col" >
+            <div>
+                <button id="list-part-btn">Lister les partenaires</button>
+            </div>
+            <div id="all-part-anchor"></div>
+        </div>
+        </div>
+
+        <div id="arrowr" class="arrow"></div>
+
+    </div>
+
+    <script src="/scripts/jquery-3.5.1.min.js"></script>
+    <script src="/scripts/scroll_arrow.js"></script>
+    <script src="/scripts/jquery.toast.min.js"></script>
+    <script src="/scripts/toast.js"></script>
+    <script src="/scripts/api_job.js"></script>
+    <script src="/scripts/part.js"></script>
+
+    </body>
+</html>

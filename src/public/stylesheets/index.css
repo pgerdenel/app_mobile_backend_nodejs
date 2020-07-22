@@ -1,0 +1,120 @@
+html {
+    margin:0;
+    padding:0;
+    height:99%;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif
+}
+h1 {
+    margin-top: 4%;
+    font-size: 36px;
+    color:#4f69ff;
+    font-weight: normal;
+}
+a {
+    text-decoration: none;
+    font-size: 24px;
+    color:#1a1a1a;
+}
+a:default {
+    color:#1a1a1a;
+}
+a:hover {
+    color:#4f69ff;
+}
+a:active {
+    color: #4f69ff;
+}
+
+#wrapper_content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    text-align: center;
+    margin: -5% 0;
+    min-height: 200px;
+}
+.arrow {
+     width:50px;
+     height:25px;
+}
+#arrowr {
+    margin-top: 10%;
+    margin-right: 10%;
+    width: 0;
+    height: 0;
+    border-top: 60px solid transparent;
+    border-bottom: 60px solid transparent;
+    border-left: 60px solid #4f69ff;
+}
+#arrowr:hover {
+    margin-top: 10%;
+    margin-right: 10%;
+    width: 0;
+    height: 0;
+    border-top: 60px solid transparent;
+    border-bottom: 60px solid transparent;
+    border-left: 60px solid rgba(0, 191, 255, 0.24);
+}
+
+#arrowl {
+    margin-top: 10%;
+    margin-left: 10%;
+    width: 0;
+    height: 0;
+    border-top: 60px solid transparent;
+    border-bottom: 60px solid transparent;
+    border-right:60px solid #4f69ff;
+}
+#arrowl:hover {
+    margin-top: 10%;
+    margin-left: 10%;
+    width: 0;
+    height: 0;
+    border-top: 60px solid transparent;
+    border-bottom: 60px solid transparent;
+    border-right:60px solid rgba(0, 191, 255, 0.24);
+}
+
+.content1 {
+    margin-top:6%;
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    justify-content: center;
+    align-content: flex-start ;
+    align-self: flex-start;
+
+}
+.block_route {
+    /*border : dotted black 1px;*/
+    width:auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    justify-content: center;
+    align-content: flex-start ;
+    align-self: flex-start;
+    font-size:6px;
+    margin-left:4em;
+    padding:3%;
+}
+
+h2 {
+    font-size: 24px;
+    color:#4f69ff;
+    font-weight: bold;
+}
+
+
+

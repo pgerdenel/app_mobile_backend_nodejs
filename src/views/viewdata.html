@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Panel Gestion des vues</title>
+        <link rel="stylesheet" type="text/css" href="/stylesheets/viewdata.css" />
+        <link rel="stylesheet" href="/stylesheets/jquery.toast.min.css"/>
+    </head>
+    <body id="body" data-tab="4">
+    <h1>Gérer les données des vues</h1>
+        <div id="wrapper_content">
+
+            <div id="arrowl" class="arrow"></div>
+
+            <div class="content1">
+                <!-- Manage View/Data -->
+                <div class="viewdata-column add-viewdata-col">
+                    <div>
+                    <select name="type-viewdata" id="type-viewdata-select" class="select-css" required>
+                        <option value="home">Ecran d'accueil</option>
+                        <option value="prez">Présentation</option>
+                        <option value="svc">Services</option>
+                    </select>
+                    </div>
+                    <div id="wrapper_job_1">
+                        <!--HOME -->
+                        <p id="p-home-label">Modification de la phrase de l'écran d'acceuil :</p>
+                        <!--SVC & PREZ-->
+                        <select id="select-label" name="label-viewdata" class="select-css" >
+                        </select>
+                        <input id="input-label-name" minlength="3" maxlength="50" placeholder="nouveau nom de label" size="46">
+                    </div>
+                    <div>
+                        <!--HOME SVC PREZ-->
+                        <textarea id="text-area" placeholder="données du label" cols="43" rows="10" minlength="10" maxlength="120" wrap="hard"></textarea>
+                    </div>
+                    <div hidden id="img_wrapper">
+                        <!--SVC PREZ-->
+                        <div  class="inputbtn">
+                            <input id="url-img-vd-input" placeholder="nom de l'image" size="42">
+                            <button id="upload-img-btn" >...</button>
+                            <input hidden type="file" id="file_upload" name="file_upload" accept="image/png, image/jpeg">
+                        </div>
+                        <div id="imagePreview"></div>
+
+                    </div>
+                    <div id="final_btns">
+                        <button id="update-label-btn">Mettre à jour</button>
+                        <button id="show-all-view">Voir tous</button>
+                    </div>
+                    </div>
+                </div>
+
+            <div id="arrowr" class="arrow"></div>
+
+        </div>
+
+    <script src="/scripts/jquery-3.5.1.min.js"></script>
+    <script src="/scripts/scroll_arrow.js"></script>
+    <script src="/scripts/jquery.toast.min.js"></script>
+    <script src="/scripts/toast.js"></script>
+    <script src="/scripts/api_job.js"></script>
+    <script src="/scripts/viewdata.js"></script>
+    </body>
+</html>

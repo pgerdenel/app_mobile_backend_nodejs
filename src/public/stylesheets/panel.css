@@ -1,0 +1,123 @@
+html {
+  margin:0;
+  padding:0;
+  height:99%;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+  margin: 0 0;
+  min-height: 200px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif
+}
+h1 {
+  color:#4f69ff;
+  font-weight: normal;
+  margin-top: 4%;
+  font-size: 36px;
+}
+h2 {
+  color:#1a1a1a;
+  margin-bottom: 10%;
+}
+a {
+  text-decoration: none;
+  font-size: 24px;
+  color:#1a1a1a;
+}
+a:default {
+  color:#1a1a1a;
+}
+a:hover {
+  color:#4f69ff;
+}
+a:active {
+  color: #4f69ff;
+}
+#wrapper_content {
+  margin: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  width: 100%;
+  text-align: center;
+  min-height: 200px;
+}
+.arrow {
+  width:50px;
+  height:25px;
+}
+#arrowr {
+  margin-top: 10%;
+  margin-left: 5%;
+  width: 0;
+  height: 0;
+  border-top: 60px solid transparent;
+  border-bottom: 60px solid transparent;
+  border-left: 60px solid #4f69ff;
+}
+#arrowr:hover {
+  margin-top: 10%;
+  width: 0;
+  height: 0;
+  border-top: 60px solid transparent;
+  border-bottom: 60px solid transparent;
+  border-left: 60px solid rgba(0, 191, 255, 0.24);
+}
+#arrowl {
+  margin-top: 10%;
+  margin-right: 5%;
+  width: 0;
+  height: 0;
+  border-top: 60px solid transparent;
+  border-bottom: 60px solid transparent;
+  border-right:60px solid #4f69ff;
+}
+#arrowl:hover {
+  margin-top: 10%;
+  width: 0;
+  height: 0;
+  border-top: 60px solid transparent;
+  border-bottom: 60px solid transparent;
+  border-right:60px solid rgba(0, 191, 255, 0.24);
+}
+.content1 {
+ /* border:solid blue 1px;*/
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  align-self: center;
+  width: 80%;
+}
+button {
+  border: 2px solid #1a1a1a !important;
+  color: #494949 !important;
+  font-size: 6px;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: #ffffff;
+  padding: 3em;
+  display: inline-block;
+  transition: all 0.4s ease 0s;
+}
+button:hover {
+  color: #4f69ff !important;
+  background: white;
+  border-color: #ffffff !important;
+  transition: all 0.4s ease 0s;
+}
+.titre {
+  margin-top: 2em;
+}
+
+.block {
+  padding:3%;
+}

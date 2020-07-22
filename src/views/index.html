@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Acceuil AMPP</title>
+        <link rel="stylesheet" type="text/css" href="stylesheets/index.css" />
+    </head>
+    <body id="body" data-tab="0">
+
+    <h1>Bienvenue sur le backend de l'AMPP</h1>
+
+    <div id="wrapper_content">
+        <div id="arrowl" class="arrow"></div>
+        <div class="content1" >
+            <div id="route_panel" class="block_route">
+                <h2>/</h2>
+                <p><a href="/api">api OK</a></p>
+                <p><a href="/panel">panel OK</a></p>
+                <p><a href="/actu">actu OK</a></p>
+                <p><a href="/part">part OK</a></p>
+                <p><a href="/viewdata">viewdata</a></p>
+                <p><a href="/contact">contact OK</a></p>
+                <p><a href="/image">image OK</a></p>
+            </div>
+            <div id="route_api_actu" class="block_route">
+                <h2>actu/</h2>
+                <p><a href="/api/actu/all">all</a></p>
+                <p><a href="/api/actu/one">one</a></p>
+                <p><a href="/api/actu/createi">createi</a></p>
+                <p><a href="/api/actu/create">create</a></p>
+                <p><a href="/api/actu/delete">delete</a></p>
+                <p><a href="/api/actu/update">update</a></p>
+            </div>
+            <div id="route_api_contact" class="block_route">
+                <h2>contact/</h2>
+                <p><a href="/api/contact/all">all</a></p>
+                <p><a href="/api/contact/create">create</a></p>
+                <p><a href="/api/contact/delete">delete</a></p>
+            </div>
+            <div id="route_api_img" class="block_route">
+                <h2>image/</h2>
+                <p><a href="/api/image/all">all</a></p>
+                <p><a href="/api/image/gallery">gallery</a></p>
+                <p><a href="/api/image/actu">actu</a></p>
+                <p><a href="/api/image/prez">prez</a></p>
+                <p><a href="/api/image/home">home</a></p>
+                <p><a href="/api/image/delete">delete</a></p>
+                <p><a href="/api/image/upload_home">upload_home</a></p>
+                <p><a href="/api/image/upload_prez">upload_prez</a></p>
+                <p><a href="/api/image/upload_gallery">upload_gallery</a></p>
+                <p><a href="/api/image/upload_actu">upload_actu</a></p>
+            </div>
+            <div id="route_api_part" class="block_route">
+                <h2>partenaire/</h2>
+                <p><a href="/api/part/all">all</a></p>
+                <p><a href="/api/part/gallery">gallery</a></p>
+                <p><a href="/api/part/actu">actu</a></p>
+                <p><a href="/api/part/prez">prez</a></p>
+                <p><a href="/api/part/home">home</a></p>
+                <p><a href="/api/part/delete">delete</a></p>
+            </div>
+            <div id="route_api_view" class="block_route">
+                <h2>view/</h2>
+                <p><a href="/api/view/all">all</a></p>
+                <p><a href="/api/view/create_vd">create_vd</a></p>
+                <p><a href="/api/view/create_vdi">create_vdi</a></p>
+            </div>
+        </div>
+        <div id="arrowr" class="arrow"></div>
+    </div>
+
+    <script src="/scripts/jquery-3.5.1.min.js"></script>
+    <script src="/scripts/scroll_arrow.js"></script>
+    </body>
+</html>
