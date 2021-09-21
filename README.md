@@ -1,3 +1,4 @@
+- Public Version
 - Backend NodeJS pour une application mobile
 - Framework ExpressJS (generer avec express TS)
 - Création d'un panel d'administration
