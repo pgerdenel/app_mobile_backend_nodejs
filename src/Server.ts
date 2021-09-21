@@ -74,19 +74,6 @@ app.use(express.static(staticDir));
 app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 console.log("ENV ? "+process.env.NODE_ENV);
 console.log("env const ? "+env);
-// # ces putains de CORS
-/*app.use((req, res, next) => {
-    res.setHeader("Access-Control-Allow-Origin", "*");
-    res.setHeader(
-        "Access-Control-Allow-Headers",
-        "Origin, X-Requested-With, Content-Type, Accept"
-    );
-    res.setHeader(
-        "Access-Control-Allow-Methods",
-        "GET, POST, PATCH, DELETE, OPTIONS"
-    );
-    next();
-});*/
 app.get('/favicon.ico', (req: Request, res: Response) => {
     res.status(204);
 });
