@@ -1,4 +1,4 @@
-# Application mobile cross-platform (Backend)
+# Application mobile cross-platform (Back)
 
 🔳 Backend (1) API application mobile :
 - Programmation asynchrone
