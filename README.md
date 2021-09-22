@@ -15,3 +15,5 @@
 - Permet le pilotage des données de l'application  (description, galerie d'image, articles, actualités, partenaires ...) par le client
 
 → Mise en production de l'AMPP sur le cloud AWS
+
+(public version)
